@@ -1,0 +1,8 @@
+.vs/
+bin/
+Bin/
+obj/
+TestResults/
+taikpizza/bin/*
+*.suo
+*.user
