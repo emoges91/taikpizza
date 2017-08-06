@@ -8,7 +8,7 @@ using TaikPizza.Activities.Orders;
 
 namespace TaikPizza.Activities.Authentication
 {
-    [Activity(Label = "Iniciar Sesion", MainLauncher = true)]
+    [Activity(Label = "Iniciar Sesion")]
     public class LoginActivity : Activity
     {
         #region properties 
