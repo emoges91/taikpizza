@@ -60,11 +60,13 @@
     <Compile Include="Activities\Orders\OrderResumeActivity.cs" />
     <Compile Include="Activities\Orders\PaymentActivity.cs" />
     <Compile Include="Activities\Orders\QuickOrderActivity.cs" />
+    <Compile Include="Activities\Orders\TrackingOrderMapActivity.cs" />
     <Compile Include="Activities\Restaurants\MenuActivity.cs" />
     <Compile Include="Activities\Restaurants\RestaurantActivity.cs" />
     <Compile Include="Activities\Settings\SettingsActivity.cs" />
     <Compile Include="Activities\Authentication\LoginActivity.cs" />
     <Compile Include="Activities\Authentication\RegisterActivity.cs" />
+    <Compile Include="Activities\Splash.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\ImageHelper.cs" />
@@ -82,6 +84,7 @@
     <AndroidResource Include="Resources\layout\QuickOrder.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <None Include="taikpizza.keystore" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

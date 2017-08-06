@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using TaikPizza.Activities.Orders;
 
@@ -18,8 +13,7 @@ namespace TaikPizza.Activities.Authentication
     {
         #region properties 
         private Button loginButton;
-        private Button signUpButton;
-
+        private Button signUpButton; 
         private EditText mailEditText;
         private EditText passwordEditText;
         #endregion
