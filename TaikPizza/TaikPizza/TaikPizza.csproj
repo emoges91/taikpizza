@@ -15,7 +15,7 @@
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
@@ -53,17 +53,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainActivity.cs" />
+    <Compile Include="Activities\Customer\AccountActivity.cs" />
+    <Compile Include="Activities\Customer\LastOrdersActivity.cs" />
+    <Compile Include="Activities\Orders\CheckoutActivity.cs" />
+    <Compile Include="Activities\Orders\NormalOrderActivity.cs" />
+    <Compile Include="Activities\Orders\OrderResumeActivity.cs" />
+    <Compile Include="Activities\Orders\PaymentActivity.cs" />
+    <Compile Include="Activities\Orders\QuickOrderActivity.cs" />
+    <Compile Include="Activities\Restaurants\MenuActivity.cs" />
+    <Compile Include="Activities\Restaurants\RestaurantActivity.cs" />
+    <Compile Include="Activities\Settings\SettingsActivity.cs" />
+    <Compile Include="Activities\Authentication\LoginActivity.cs" />
+    <Compile Include="Activities\Authentication\RegisterActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\ImageHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml">
+    <AndroidResource Include="Resources\layout\Login.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Register.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\QuickOrder.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -75,6 +91,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Adapters\" />
+    <Folder Include="Fragments\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
